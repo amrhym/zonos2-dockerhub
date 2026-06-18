@@ -2,7 +2,9 @@
 
 Ready container for validating Zyphra ZONOS2 on NVIDIA GPUs.
 
-The image starts the official ZONOS2 HTTP server on port `8000`.
+The image starts the official ZONOS2 HTTP server on port `8000` using
+`python -m zonos2`. ZONOS2 uses Mini-SGLang internally, but the server entry
+point is the `zonos2` module.
 
 Important endpoints:
 
