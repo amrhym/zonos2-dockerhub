@@ -16,7 +16,7 @@ Important endpoints:
 ## Docker Hub Image
 
 ```text
-amrhym/zonos2-b200:latest
+amrhym/xttsv2.0:latest
 ```
 
 The default image includes runtime dependencies but does not bake the full
@@ -37,7 +37,7 @@ Tag: latest
 ## RunPod Test
 
 ```text
-Image: amrhym/zonos2-b200:latest
+Image: amrhym/xttsv2.0:latest
 GPU: H100/H200/B200
 HTTP port: 8000
 Container disk: 120 GB minimum
@@ -68,5 +68,5 @@ Use this only on a large builder:
 ```bash
 docker build \
   --build-arg PRELOAD_MODEL=true \
-  -t amrhym/zonos2-b200:with-weights .
+  -t amrhym/xttsv2.0:with-weights .
 ```
